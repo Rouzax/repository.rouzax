@@ -51,5 +51,36 @@ v1.0.0 (2026-03-24)
     </news>
     </extension>
   </addon>
+  <addon id="script.easytv" name="EasyTV" version="1.5.1" provider-name="Rouzax">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1" />
+      <import addon="script.module.pymysql" version="1.1.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">No scrolling. No deciding. Just watching.</summary>
+      <description lang="en_GB">Tired of scrolling through your library wondering what to watch? EasyTV handles it. It tracks your shows and always knows your next episode. When you're ready for something new, it'll suggest a show you haven't started. Throw in some movies if you want. Just sit down, press play, and enjoy. Built for Kodi 21+.</description>
+      <language />
+      <platform>all</platform>
+      <license>GPL-3.0-only</license>
+      <forum>https://forum.kodi.tv/showthread.php?tid=383902</forum>
+      <website>https://rouzax.github.io/script.easytv/</website>
+      <source>https://github.com/Rouzax/script.easytv</source>
+      <news>v1.5.1 (2026-03-24)
+- Showcase browse view: horizontal poster filmstrip (5th view style)
+- Heading areas with item counts on all five browse views
+- Icon theme selection with 4 bundled styles and instant cache refresh
+- Dialog preview rewrite with real library data and theme color picker
+- Visual harmonization with EasyMovie across all views and dialogs
+- Clone updates now mandatory when version mismatch detected</news>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+    </extension>
+  </addon>
 </addons>
 
