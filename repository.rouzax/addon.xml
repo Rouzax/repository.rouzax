@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.rouzax" name="Rouzax Repository" version="1.0.0" provider-name="Rouzax">
+  <requires>
+    <import addon="xbmc.addon" version="21.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Rouzax Repository">
+    <dir>
+      <info compressed="false">https://rouzax.github.io/repository.rouzax/zips/addons.xml</info>
+      <checksum>https://rouzax.github.io/repository.rouzax/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://rouzax.github.io/repository.rouzax/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Rouzax Kodi Addons</summary>
+    <description lang="en_GB">Install and update Rouzax addons: EasyMovie, EasyTV, and QuickList.</description>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <license>GPL-3.0-only</license>
+    <source>https://github.com/Rouzax/repository.rouzax</source>
+  </extension>
+</addon>
