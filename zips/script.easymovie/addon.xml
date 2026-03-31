@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.easymovie" name="EasyMovie" version="1.0.0" provider-name="Rouzax">
+  <requires>
+    <import addon="xbmc.python" version="3.0.1"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Simplify movie night</summary>
+    <description lang="en_GB">EasyMovie helps you pick movies for movie night. Answer a few questions (genre, rating, runtime) and get a curated random selection from your library. Supports movie set awareness, multiple viewing modes, and playlist generation.</description>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <license>GPL-3.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=385063</forum>
+    <website>https://rouzax.github.io/script.easymovie/</website>
+    <source>https://github.com/Rouzax/script.easymovie</source>
+    <platform>all</platform>
+    <news>
+v1.0.0 (2026-03-24)
+- Filter wizard narrows your library by genre, rating, runtime, year, and score
+- Five browse views: Showcase, Card List, Posters, Big Screen, Split View
+- Playlist mode builds movie marathons with resume support
+- Movie set awareness with continuation prompts and earlier-movie warnings
+- Four color themes: Golden Hour, Ultraviolet, Ember, Nightfall
+- Clone support for multiple instances with independent settings
+    </news>
+  </extension>
+</addon>
