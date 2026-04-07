@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="service.chapternotify" name="Chapter Notify" version="0.5.0" provider-name="Rouzax">
+<addon id="service.chapternotify" name="Chapter Notify" version="0.5.1" provider-name="Rouzax">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
   </requires>
@@ -14,13 +14,9 @@
     <platform>all</platform>
     <license>GPL-3.0-only</license>
     <source>https://github.com/Rouzax/service.chapternotify</source>
-    <news>v0.5.0 (2026-04-07)
-- EasyTV-style theming with 4 color themes (Golden Hour, Ultraviolet, Ember, Nightfall)
-- Rounded panel background with accent border
-- Configurable background opacity (0-100%)
-- Toggle to show/hide background
-- Split prefix/value labels with scrolling for long text
-- Any button press dismisses overlay instantly
+    <news>v0.5.1 (2026-04-07)
+- Fixed text descenders overlapping the accent separator line
+- Improved vertical spacing between all text lines
     </news>
     <assets>
       <icon>icon.png</icon>
