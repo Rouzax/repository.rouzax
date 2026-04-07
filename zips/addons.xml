@@ -112,5 +112,33 @@ v1.0.0 (2026-03-24)
       </assets>
     </extension>
   </addon>
+  <addon id="service.chapternotify" name="Chapter Notify" version="0.5.0" provider-name="Rouzax">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.script" library="default.py">
+      <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Show chapter notifications during video playback</summary>
+      <description lang="en_GB">Displays a styled overlay notification when a new chapter starts playing in videos from configured library folders. Designed for concert recordings and festival DJ sets with named chapters (Artist - Track [Label]). Perfect companion to CrateDigger, which embeds chapter markers from 1001Tracklists.</description>
+      <language />
+      <platform>all</platform>
+      <license>GPL-3.0-only</license>
+      <source>https://github.com/Rouzax/service.chapternotify</source>
+      <news>v0.5.0 (2026-04-07)
+- EasyTV-style theming with 4 color themes (Golden Hour, Ultraviolet, Ember, Nightfall)
+- Rounded panel background with accent border
+- Configurable background opacity (0-100%)
+- Toggle to show/hide background
+- Split prefix/value labels with scrolling for long text
+- Any button press dismisses overlay instantly
+    </news>
+      <assets>
+        <icon>icon.png</icon>
+      </assets>
+    </extension>
+  </addon>
 </addons>
 
