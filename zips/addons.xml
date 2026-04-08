@@ -112,7 +112,7 @@ v1.0.0 (2026-03-24)
       </assets>
     </extension>
   </addon>
-  <addon id="service.chapternotify" name="Chapter Notify" version="0.5.1" provider-name="Rouzax">
+  <addon id="service.chapternotify" name="Chapter Notify" version="0.6.0" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -127,7 +127,14 @@ v1.0.0 (2026-03-24)
       <platform>all</platform>
       <license>GPL-3.0-only</license>
       <source>https://github.com/Rouzax/service.chapternotify</source>
-      <news>v0.5.1 (2026-04-07)
+      <news>v0.6.0 (2026-04-08)
+- Added Manual and Both trigger modes - the chapter overlay can now be summoned on demand by pressing a configurable key during playback
+- Added Trigger settings group with Mode, Trigger key (free-form text input), and Remove keymap binding action
+- Manual trigger bypasses the library path filter, so chapter info can be summoned on any media that has chapters
+- Each press of the trigger key always shows or replaces the overlay for visible feedback. To dismiss manually, press any other key
+- Default trigger_mode is Auto so existing v0.5.1 behavior is preserved on upgrade
+
+v0.5.1 (2026-04-07)
 - Fixed text descenders overlapping the accent separator line
 - Improved vertical spacing between all text lines
     </news>
