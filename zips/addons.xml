@@ -112,7 +112,7 @@ v1.0.0 (2026-03-24)
       </assets>
     </extension>
   </addon>
-  <addon id="service.chapternotify" name="Chapter Notify" version="0.6.0" provider-name="Rouzax">
+  <addon id="service.chapternotify" name="Chapter Notify" version="0.7.0" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -127,7 +127,13 @@ v1.0.0 (2026-03-24)
       <platform>all</platform>
       <license>GPL-3.0-only</license>
       <source>https://github.com/Rouzax/service.chapternotify</source>
-      <news>v0.6.0 (2026-04-08)
+      <news>v0.7.0 (2026-04-09)
+- Added "Show record label" setting so the overlay can hide the record label line on demand
+- Overlay now picks panel height to match its content: 3-line, 2-line, or single-line
+- Raw chapters that do not match the "Artist - Track [Label]" format render as a clean centered single line instead of an awkward partial 3-line box
+- Fixed the historical reversed labeling: the top row in the overlay now correctly says "Track:" (was internally swapped in v0.5.0 through v0.6.0)
+
+v0.6.0 (2026-04-08)
 - Added Manual and Both trigger modes - the chapter overlay can now be summoned on demand by pressing a configurable key during playback
 - Added Trigger settings group with Mode, Trigger key (free-form text input), and Remove keymap binding action
 - Manual trigger bypasses the library path filter, so chapter info can be summoned on any media that has chapters
