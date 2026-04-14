@@ -112,7 +112,7 @@ v1.0.0 (2026-03-24)
       </assets>
     </extension>
   </addon>
-  <addon id="service.chapternotify" name="Chapter Notify" version="0.7.0" provider-name="Rouzax">
+  <addon id="service.chapternotify" name="Chapter Notify" version="0.7.1" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -127,7 +127,11 @@ v1.0.0 (2026-03-24)
       <platform>all</platform>
       <license>GPL-3.0-only</license>
       <source>https://github.com/Rouzax/service.chapternotify</source>
-      <news>v0.7.0 (2026-04-09)
+      <news>v0.7.1 (2026-04-14)
+- Fixed festival set overlays showing only the raw track title instead of the full Artist / Track / Label layout
+- Chapter Notify now reads chapter names directly from the MKV file, picking the English-language display string that CrateDig embeds alongside the plain title entry
+
+v0.7.0 (2026-04-09)
 - Added "Show record label" setting so the overlay can hide the record label line on demand
 - Overlay now picks panel height to match its content: 3-line, 2-line, or single-line
 - Raw chapters that do not match the "Artist - Track [Label]" format render as a clean centered single line instead of an awkward partial 3-line box
