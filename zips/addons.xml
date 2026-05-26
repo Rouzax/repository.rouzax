@@ -109,7 +109,7 @@ v1.0.2 (2026-05-08)
       </assets>
     </extension>
   </addon>
-  <addon id="service.chapternotify" name="Chapter Notify" version="0.7.3" provider-name="Rouzax">
+  <addon id="service.chapternotify" name="Chapter Notify" version="0.7.4" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -124,7 +124,11 @@ v1.0.2 (2026-05-08)
       <platform>all</platform>
       <license>GPL-3.0-only</license>
       <source>https://github.com/Rouzax/service.chapternotify</source>
-      <news>v0.7.3 (2026-05-19)
+      <news>v0.7.4 (2026-05-26)
+- MKV tag reader now uses the new CrateDigger track title tag, fixing VLC/MediaInfo showing the wrong title for the last chapter
+- Older CrateDigger files with the legacy tag name still work automatically
+
+v0.7.3 (2026-05-19)
 - Fixed CrateDig tag detection failing on mkvmerge-produced files where the Chapters element is inline in the file header instead of referenced by the SeekHead
 - Added secondary SeekHead chain following so all MKV layouts are supported
 - Fixed TagChapterUID element ID (was incorrectly using TagTrackUID), enabling proper UID-based chapter matching alongside the existing title-based fallback
