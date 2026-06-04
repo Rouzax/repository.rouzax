@@ -7,12 +7,12 @@
         <import addon="xbmc.python" version="3.0.1" />
         <import addon="script.module.requests" version="2.28.0" />
     </requires>
-    <extension point="xbmc.service"
-               library="service.py" />
     <extension point="xbmc.python.script"
                library="default.py">
         <provides>executable</provides>
     </extension>
+    <extension point="xbmc.service"
+               library="service.py" />
     <extension point="xbmc.python.library"
                library="resources/lib" />
     <extension point="xbmc.addon.metadata">

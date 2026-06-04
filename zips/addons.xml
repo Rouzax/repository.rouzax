@@ -82,10 +82,10 @@ v1.0.2 (2026-05-08)
       <import addon="xbmc.python" version="3.0.1" />
       <import addon="script.module.requests" version="2.28.0" />
     </requires>
-    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.python.script" library="default.py">
       <provides>executable</provides>
     </extension>
+    <extension point="xbmc.service" library="service.py" />
     <extension point="xbmc.python.library" library="resources/lib" />
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Backfill missing age ratings in your Kodi library</summary>
