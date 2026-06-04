@@ -15,5 +15,6 @@ A personal Kodi addon repository for installing and auto-updating Rouzax addons.
 |-------|-------------|
 | [EasyMovie](https://github.com/Rouzax/script.easymovie) | Simplify movie night with a filter wizard and curated random selection |
 | [EasyTV](https://github.com/Rouzax/script.easytv) | No scrolling. No deciding. Just watching. |
+| [EU Certification Fixer](https://github.com/Rouzax/script.eucert.fixer) | Set it and forget it. Automatically fills missing age certifications. |
 | [Chapter Notify](https://github.com/Rouzax/service.chapternotify) | See what's playing. Every chapter. |
 | [QuickList](https://github.com/Rouzax/script.quicklist) | Context menu addon for managing TV shows in smart playlists |

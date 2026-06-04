@@ -12,7 +12,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">Rouzax Kodi Addons</summary>
-    <description lang="en_GB">Install and update Rouzax addons: EasyMovie, EasyTV, and QuickList.</description>
+    <description lang="en_GB">Install and update Rouzax addons: EasyMovie, EasyTV, EU Certification Fixer, Chapter Notify, and QuickList.</description>
     <assets>
       <icon>icon.png</icon>
     </assets>
