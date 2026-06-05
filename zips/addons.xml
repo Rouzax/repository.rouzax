@@ -77,7 +77,7 @@ v1.0.2 (2026-05-08)
       </assets>
     </extension>
   </addon>
-  <addon id="script.eucert.fixer" name="EU Certification Fixer" version="0.3.1" provider-name="Rouzax">
+  <addon id="script.eucert.fixer" name="EU Certification Fixer" version="0.3.2" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
       <import addon="script.module.requests" version="2.28.0" />
@@ -95,10 +95,11 @@ v1.0.2 (2026-05-08)
       <license>MIT</license>
       <website>https://rouzax.github.io/script.eucert.fixer/</website>
       <source>https://github.com/Rouzax/script.eucert.fixer</source>
-      <news>v0.3.1 (2026-06-04)
-- Certification prefix now defaults to country preset (e.g. NL:, DE:, Rated)
-- Added advanced toggle to override the prefix with a custom value
-- The prefix field is no longer empty by default</news>
+      <news>v0.3.2 (2026-06-05)
+~ Native scraper now runs before TMDB inference for more accurate results
+~ Inference chain interleaves TMDB and scrapers by cultural relevance
+~ Replace incorrect now enforces the configured prefix consistently
+~ Added test suite</news>
       <assets>
         <icon>icon.png</icon>
       </assets>
