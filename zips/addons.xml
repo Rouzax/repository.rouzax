@@ -77,7 +77,7 @@ v1.0.2 (2026-05-08)
       </assets>
     </extension>
   </addon>
-  <addon id="script.eucert.fixer" name="EU Certification Fixer" version="0.3.2" provider-name="Rouzax">
+  <addon id="script.eucert.fixer" name="EU Certification Fixer" version="0.3.3" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
       <import addon="script.module.requests" version="2.28.0" />
@@ -95,11 +95,10 @@ v1.0.2 (2026-05-08)
       <license>MIT</license>
       <website>https://rouzax.github.io/script.eucert.fixer/</website>
       <source>https://github.com/Rouzax/script.eucert.fixer</source>
-      <news>v0.3.2 (2026-06-05)
-~ Native scraper now runs before TMDB inference for more accurate results
-~ Inference chain interleaves TMDB and scrapers by cultural relevance
-~ Replace incorrect now enforces the configured prefix consistently
-~ Added test suite</news>
+      <news>v0.3.3 (2026-06-05)
+~ Improved debug logging: every per-item log line now includes the title
+~ Consistent provider messages across all scrapers for easier log reading
+~ Result count shown on all scraper match and no-match log lines</news>
       <assets>
         <icon>icon.png</icon>
       </assets>
