@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.eucert.fixer"
        name="EU Certification Fixer"
-       version="0.3.4"
+       version="0.3.5"
        provider-name="Rouzax">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
@@ -23,11 +23,11 @@
         <license>MIT</license>
         <website>https://rouzax.github.io/script.eucert.fixer/</website>
         <source>https://github.com/Rouzax/script.eucert.fixer</source>
-        <news>v0.3.4 (2026-06-05)
-~ Improved scraper title matching with accent normalization and prefix awareness
-~ Scrapers now find titles like Pokemon when Kodi stores Pokémon (and vice versa)
-~ TV series with season suffixes (e.g. "Pokemon: XY") now match the base title
-~ FSK year filter skipped for TV shows to avoid missing older series</news>
+        <news>v0.3.5 (2026-06-05)
+~ Fixed kijkwijzer scraper being blocked on some systems
+~ Scraper canaries now disable broken scrapers for the scan cycle
+~ Fixed BBFC canary matching the wrong entry for Interstellar
+~ Manual scan now runs canary checks before scanning</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
