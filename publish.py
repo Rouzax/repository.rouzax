@@ -154,6 +154,28 @@ def extract_addon_xml(addon_id: str, addon_xml_bytes: bytes) -> None:
     print("  Extracted addon.xml to: zips/{}/addon.xml".format(addon_id))
 
 
+ARTWORK_FILES = ["icon.png", "fanart.jpg"]
+
+
+def extract_artwork(zip_path: str, addon_id: str) -> None:
+    """Extract icon.png and fanart.jpg from the zip into zips/<addon-id>/."""
+    addon_dir = os.path.join(ZIPS_DIR, addon_id)
+    os.makedirs(addon_dir, exist_ok=True)
+
+    with zipfile.ZipFile(zip_path, "r") as zf:
+        for filename in ARTWORK_FILES:
+            zip_entry = "{}/{}".format(addon_id, filename)
+            if zip_entry in zf.namelist():
+                data = zf.read(zip_entry)
+                dest = os.path.join(addon_dir, filename)
+                with open(dest, "wb") as f:
+                    f.write(data)
+                print("  Extracted {} to: zips/{}/{}".format(
+                    filename, addon_id, filename))
+            else:
+                print("  Skipped {} (not in zip)".format(filename))
+
+
 def _indent_xml(elem: ET.Element, level: int = 0) -> None:
     """Add indentation to an XML element tree (Python 3.8 compatible).
 
@@ -273,32 +295,36 @@ def main() -> None:
     print("Publishing addon zip: {}".format(zip_path))
 
     # Step 1: Extract addon info from zip
-    print("\n[1/7] Extracting addon info...")
+    print("\n[1/8] Extracting addon info...")
     addon_id, version, addon_xml_bytes = extract_addon_info(zip_path)
     print("  Addon: {} v{}".format(addon_id, version))
 
     # Step 2: Validate zip contents
-    print("\n[2/7] Validating zip contents...")
+    print("\n[2/8] Validating zip contents...")
     validate_zip_contents(zip_path, addon_id)
 
     # Step 3: Remove old zips
-    print("\n[3/7] Removing old zips...")
+    print("\n[3/8] Removing old zips...")
     remove_old_zips(addon_id)
 
     # Step 4: Copy new zip
-    print("\n[4/7] Copying new zip...")
+    print("\n[4/8] Copying new zip...")
     copy_new_zip(zip_path, addon_id, version)
 
     # Step 5: Extract addon.xml
-    print("\n[5/7] Extracting addon.xml...")
+    print("\n[5/8] Extracting addon.xml...")
     extract_addon_xml(addon_id, addon_xml_bytes)
 
-    # Step 6: Regenerate addons.xml
-    print("\n[6/7] Regenerating addons.xml...")
+    # Step 6: Extract artwork
+    print("\n[6/8] Extracting artwork...")
+    extract_artwork(zip_path, addon_id)
+
+    # Step 7: Regenerate addons.xml
+    print("\n[7/8] Regenerating addons.xml...")
     regenerate_addons_xml()
 
-    # Step 7: Regenerate addons.xml.md5
-    print("\n[7/7] Regenerating addons.xml.md5...")
+    # Step 8: Regenerate addons.xml.md5
+    print("\n[8/8] Regenerating addons.xml.md5...")
     regenerate_addons_xml_md5()
 
     # Git commit and push
