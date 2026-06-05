@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.eucert.fixer"
        name="EU Certification Fixer"
-       version="0.3.0"
+       version="0.3.1"
        provider-name="Rouzax">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
@@ -23,13 +23,10 @@
         <license>MIT</license>
         <website>https://rouzax.github.io/script.eucert.fixer/</website>
         <source>https://github.com/Rouzax/script.eucert.fixer</source>
-        <news>v0.3.0 (2026-06-04)
-- Initial release
-- Automatically fills missing age certifications for movies and TV shows
-- 9 country presets: NL, BE, DE, AT, GB, US, FR, DK, SE
-- Searches TMDB, OMDB, and national rating authority websites (FSK, BBFC, Medieraadet, Kijkwijzer)
-- Converts between rating systems using conservative rounding
-- Runs in the background with configurable scan intervals</news>
+        <news>v0.3.1 (2026-06-04)
+- Certification prefix now defaults to country preset (e.g. NL:, DE:, Rated)
+- Added advanced toggle to override the prefix with a custom value
+- The prefix field is no longer empty by default</news>
         <assets>
             <icon>icon.png</icon>
         </assets>
