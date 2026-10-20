@@ -221,7 +221,7 @@ v0.5.1 (2026-04-07)
       </assets>
     </extension>
   </addon>
-  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.0.0" provider-name="Rouzax">
+  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.0.1" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -235,11 +235,12 @@ v0.5.1 (2026-04-07)
       <forum>https://forum.kodi.tv/showthread.php?tid=389119</forum>
       <source>https://github.com/crosswatch-app/kodi-addon</source>
       <website>https://crosswatch-app.github.io/kodi-addon/</website>
-      <news>v1.0.0 (2026-10-20)
-- First stable release, now called CrossWatch for Kodi.
-- Available from the Rouzax Repository with automatic updates, and submitted to the official Kodi repository.
-- Works on Kodi 21 and has been tested on the Kodi 22 release candidate.
-- Kodi's log stays quieter: routine lines appear only with Kodi's debug logging on; problems always show.</news>
+      <news>v1.0.1 (2026-10-20)
+- Stream addresses are cleaned more thoroughly: access tokens and passwords in them no longer reach CrossWatch or the log.
+- A watch is no longer lost when a proxy in front of CrossWatch shows a login or maintenance page; it is sent later.
+- A profile renamed in CrossWatch while something plays now also applies to that watch.
+- A mistyped port in the CrossWatch address shows a clear message instead of failing.
+- Changes in Viewers are no longer lost if CrossWatch renames someone at the same moment.</news>
       <assets>
         <icon>icon.png</icon>
         <fanart>fanart.jpg</fanart>
