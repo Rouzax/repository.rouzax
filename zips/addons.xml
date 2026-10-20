@@ -221,5 +221,30 @@ v0.5.1 (2026-04-07)
       </assets>
     </extension>
   </addon>
+  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.0.0" provider-name="Rouzax">
+    <requires>
+      <import addon="xbmc.python" version="3.0.1" />
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.script" library="configure.py" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Everyone in the household keeps their own watch history, through your own CrossWatch.</summary>
+      <description lang="en_GB">CrossWatch (crosswatch.app) is a free, self-hosted app that keeps watch history, ratings and playback progress in sync between media servers such as Plex, Jellyfin and Emby and trackers such as Trakt and Simkl, with a profile per person. This add-on needs a running CrossWatch on your network.[CR][CR]It reports what plays in Kodi, and who is watching, so each person's history reaches their own accounts. The viewer is worked out from smart playlist membership, the active Kodi profile, or a question when playback stops, remembered per show. Optionally, rate an episode or film after watching it.[CR][CR]Maintained by Rouzax, not by the CrossWatch project: report add-on problems on GitHub (github.com/crosswatch-app/kodi-addon).</description>
+      <platform>all</platform>
+      <license>GPL-2.0-only AND Apache-2.0</license>
+      <forum>https://forum.kodi.tv/showthread.php?tid=389119</forum>
+      <source>https://github.com/crosswatch-app/kodi-addon</source>
+      <website>https://crosswatch-app.github.io/kodi-addon/</website>
+      <news>v1.0.0 (2026-10-20)
+- First stable release, now called CrossWatch for Kodi.
+- Available from the Rouzax Repository with automatic updates, and submitted to the official Kodi repository.
+- Works on Kodi 21 and has been tested on the Kodi 22 release candidate.
+- Kodi's log stays quieter: routine lines appear only with Kodi's debug logging on; problems always show.</news>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+    </extension>
+  </addon>
 </addons>
 
