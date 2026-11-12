@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.metamender"
        name="MetaMender"
-       version="1.0.0"
+       version="1.0.1"
        provider-name="Rouzax">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
@@ -36,7 +36,11 @@
         <website>https://rouzax.github.io/script.metamender/</website>
         <source>https://github.com/Rouzax/script.metamender</source>
         <forum>https://forum.kodi.tv/showthread.php?tid=389809</forum>
-        <news>v1.0.0 (2026-11-12)
+        <news>v1.0.1 (2026-11-13)
+- Closes promptly when Kodi quits during Update now
+- Small changes asked for by the official Kodi repository review
+
+v1.0.0 (2026-11-12)
 - First release: fills missing plots, titles, credits and more in each folder's language
 - Keeps new movies' and episodes' scores up to date while their votes come in
 - Age ratings in your own country's system, for ten countries
