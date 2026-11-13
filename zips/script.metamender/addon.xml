@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.metamender"
        name="MetaMender"
-       version="1.0.1"
+       version="1.1.0"
        provider-name="Rouzax">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
@@ -36,7 +36,12 @@
         <website>https://rouzax.github.io/script.metamender/</website>
         <source>https://github.com/Rouzax/script.metamender</source>
         <forum>https://forum.kodi.tv/showthread.php?tid=389809</forum>
-        <news>v1.0.1 (2026-11-13)
+        <news>v1.1.0 (2026-11-13)
+- Setup now asks which rating Kodi shows: your scraper's, TMDB's or IMDb's
+- Setup now asks where TV show plots and titles come from first
+- Setup asks whether to replace other countries' age ratings
+
+v1.0.1 (2026-11-13)
 - Closes promptly when Kodi quits during Update now
 - Small changes asked for by the official Kodi repository review
 
