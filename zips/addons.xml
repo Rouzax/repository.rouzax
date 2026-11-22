@@ -132,7 +132,7 @@ v1.10.1 (2026-09-05)
       </assets>
     </extension>
   </addon>
-  <addon id="script.metamender" name="MetaMender" version="1.1.0" provider-name="Rouzax">
+  <addon id="script.metamender" name="MetaMender" version="1.2.0" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
       <import addon="script.module.requests" version="2.28.0" />
@@ -164,7 +164,15 @@ v1.10.1 (2026-09-05)
       <website>https://rouzax.github.io/script.metamender/</website>
       <source>https://github.com/Rouzax/script.metamender</source>
       <forum>https://forum.kodi.tv/showthread.php?tid=389809</forum>
-      <news>v1.1.0 (2026-11-13)
+      <news>v1.2.0 (2026-11-22)
+- Choose which libraries MetaMender works on; each one gets its own settings page
+- Ticking a library switches nothing on, and libraries added later stay out with a notice
+- New Keep the original title option per library
+- Settings from 1.1 are converted automatically on first start; nothing in your library changes. If they could not be read, nothing is switched on and a notice says so
+- Fixed: on OSMC and other Kodi builds with Python 3.9 the add-on did not start
+- With the IMDb ratings module 1.1.0, IMDb ratings no longer start a download in the middle of a scan
+
+v1.1.0 (2026-11-13)
 - Setup now asks which rating Kodi shows: your scraper's, TMDB's or IMDb's
 - Setup now asks where TV show plots and titles come from first
 - Setup asks whether to replace other countries' age ratings
