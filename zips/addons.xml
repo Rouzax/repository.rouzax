@@ -278,7 +278,7 @@ v0.5.1 (2026-04-07)
       </assets>
     </extension>
   </addon>
-  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.1.1" provider-name="Rouzax">
+  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.1.2" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -292,7 +292,12 @@ v0.5.1 (2026-04-07)
       <forum>https://forum.kodi.tv/showthread.php?tid=389119</forum>
       <source>https://github.com/crosswatch-app/kodi-addon</source>
       <website>https://crosswatch-app.github.io/kodi-addon/</website>
-      <news>v1.1.1 (2026-11-26)
+      <news>v1.1.2 (2026-11-26)
+- Library sync no longer gets stuck when a large new show is marked watched right after a library scan.
+- Marks made in Kodi are no longer lost when the add-on's mark list is busy.
+- Kodi closes faster when CrossWatch can't be reached.
+
+v1.1.1 (2026-11-26)
 - Now also runs on a Kodi built with Python 3.10.
 - Library sync no longer risks an error reading Kodi's dates after it has run once.
 
