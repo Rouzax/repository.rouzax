@@ -278,7 +278,7 @@ v0.5.1 (2026-04-07)
       </assets>
     </extension>
   </addon>
-  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.1.3" provider-name="Rouzax">
+  <addon id="service.crosswatch" name="CrossWatch for Kodi" version="1.1.4" provider-name="Rouzax">
     <requires>
       <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -292,7 +292,10 @@ v0.5.1 (2026-04-07)
       <forum>https://forum.kodi.tv/showthread.php?tid=389119</forum>
       <source>https://github.com/crosswatch-app/kodi-addon</source>
       <website>https://crosswatch-app.github.io/kodi-addon/</website>
-      <news>v1.1.3 (2026-11-27)
+      <news>v1.1.4 (2026-11-27)
+- Ratings on items PlexKodiConnect or Jellyfin for Kodi just added are left to that add-on.
+
+v1.1.3 (2026-11-27)
 - Now works on Kodi 21 for Windows and Xbox.
 - Library sync no longer keeps re-checking ratings after the library changed during a read.
 - Items from PlexKodiConnect and Jellyfin for Kodi are always left out of library sync.
